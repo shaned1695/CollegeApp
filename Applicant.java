@@ -3,8 +3,10 @@ public class Applicant {
 	private String name;
 	private int id;
 
-    public Applicant() {
-    }
+    public Applicant(String name, int id) {
+    	this.name = ((name.length()>0)?name: "Unknown");
+    	this.id = ((id >0)?id: 1);
+    }//end constructor
 
 
 }
