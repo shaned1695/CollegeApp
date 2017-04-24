@@ -8,5 +8,10 @@ public class Applicant {
     	this.id = ((id >0)?id: 1);
     }//end constructor
 
+    public String toString(){
+    	return "\nName: " + name + "\nID: " + id;
+    }//toString
 
-}
+
+}//end class
+
