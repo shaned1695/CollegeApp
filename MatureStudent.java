@@ -8,5 +8,9 @@ public class MatureStudent {
     	this.DoB = DoB;
     }//end constructor
 
+    public String toString(){
+    	return super.toString() + "\nDate of Birth: " + DoB;
+    }//end toString
 
-}
+
+}//end class
