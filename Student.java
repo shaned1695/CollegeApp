@@ -10,4 +10,8 @@ public class Student {
     }//end constuctor
 
 
+	public String toString(){
+    	return super.toString() + "\nAddress: " + address + a1.toString();
+    }//end toString
+
 }
