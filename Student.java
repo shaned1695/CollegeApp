@@ -4,10 +4,17 @@ public class Student {
 	private Application a1;
 
     public Student(String name, int id, String address, Application a1) {
-    	super (name,id);
+    	//super (name,id);
     	this.address = ((address.length()>0)?address: "Unknown");
     	this.a1=a1;
     }//end constuctor
+
+    public void setaddress(String address){
+		this.address=address;
+    }
+    public String getaddress(){
+    	return address;
+    }
 
 
 	public String toString(){
