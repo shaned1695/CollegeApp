@@ -223,9 +223,29 @@ public class StudentTest2 {
 						System.out.println("Cannot save to file");
 					}
 
+					for (int i = 0;i<s1.length;i++){
+		  	 			try{
+							Information.newLine();
+							Information.write(s1[i].toString());
+							if(i==s1.length-1){
+								Information.newLine();
+								Information.close();
+								Date d = new Date();
+								System.out.println("\nFile Updated on " + d.toString() + "\n");
+							}//end if
 
+						}//end try
+						catch(Exception ex){
+							System.out.println("Could not access file");
+						}//end catch
+					}//end for
+					//End of writing to a file
+					//System.out.println("\nFile updated\n");
+					System.out.println("Thank you for using the program\n\n");
+					System.exit(0);
+    			}//end if
+		}//end while
 
-    }
+    }//end main method
 
-
-}
+}//end class
