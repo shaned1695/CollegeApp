@@ -205,6 +205,24 @@ public class StudentTest2 {
 								s1[sub].setid(NewStudentID);
 							}//end if
 						}//end choice = 4
+						else{
+							break;
+						}//end if
+    				}//end while
+    			}//end else
+    		}//end choice
+
+    			else{
+    				//Write all info to a file
+					BufferedWriter Information = null;
+					String loc1 = "Info.doc";
+
+					try{
+						Information = new BufferedWriter (new FileWriter(loc1,true));
+						}catch(Exception e){
+						System.out.println("Cannot save to file");
+					}
+
 
 
     }
