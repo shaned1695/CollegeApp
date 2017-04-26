@@ -46,6 +46,13 @@ public class StudentTest2 {
     		System.out.print("Please enter address: ");
     		Address = input.nextLine();
 
+    		//create application
+    		a1[i] = new Application(Course_Name,Course_Number);
+    		System.out.print("Is the applicant a mature student <y/n>: ");
+    		mstudent = input.next();
+    		mstudent = mstudent.toLowerCase();
+    		System.out.println("Option Chosen = " + mstudent);
+
     }
 
 
