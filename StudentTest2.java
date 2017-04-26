@@ -139,6 +139,26 @@ public class StudentTest2 {
 				struserID = input.nextLine();
 				userID = validate(struserID,4);
 
+				//if useID and ID- match print users details outside the loop
+    			for(int i = 0;i<s1.length;i++){
+    				if(userID == s1[i].getid()){
+    					//change the value of the flag
+	    				flag = true;
+	    				System.out.println("ID Found");
+	    				//hold onto i, this is where the users details are stored in the array
+	    				sub = i;
+	    				//break out of the loop
+	    				break;
+
+    				}//end if userID == ID[i]
+    			}//end for
+    			//If id's do not match, then exit the program
+    			if (flag == false){
+    				System.out.println("ID was not found, this program will now end");
+    				System.exit(0);
+    			}//end if
+
+
     }
 
 
