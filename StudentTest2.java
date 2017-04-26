@@ -158,6 +158,37 @@ public class StudentTest2 {
     				System.exit(0);
     			}//end if
 
+    			else{
+					while(menu != 5){
+    					//Show the menu, and Prompt the user for input
+    					System.out.print("\n\nSelect An Option\n\n1: View Application Details\n2: View Personal Details\n3: Change Application Details\n4: Change Personal Details\n5: Exit\n");
+						strmchoice = input.nextLine();
+
+						mchoice = validate(strmchoice,3);
+
+						if(mchoice == 1){
+							System.out.print(a1[sub].toString());
+						}//end choice = 1
+						else if(mchoice == 2){
+							System.out.print(s1[sub].toString());
+						}//end choice = 2
+						else if(mchoice == 3){
+							System.out.print("Enter 1 to Change Course Or 2 to Change Course ID : ");
+							strchangeap = input.nextLine();
+							changeap = validate(strchangeap,5);
+							if(changeap == 1){
+								System.out.print("Enter Course Name :");
+								NewCourseName = input.nextLine();
+								a1[sub].setcourse_name(NewCourseName);
+							}//end if
+							if(changeap == 2){
+								System.out.print("Enter Course ID : ");
+								strnewcourseID = input.nextLine();
+								NewCourseID = validate(strnewcourseID,4);
+								a1[sub].setcourse_number(NewCourseID);
+							}//end if
+						}//end choice = 3
+
 
     }
 
