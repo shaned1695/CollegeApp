@@ -53,6 +53,14 @@ public class StudentTest2 {
     		mstudent = mstudent.toLowerCase();
     		System.out.println("Option Chosen = " + mstudent);
 
+    		//While loop, validation for mature student Y/N
+    		while(!mstudent.matches("y") && (!mstudent.matches("n"))){
+    			System.out.println("Error, Please enter y or n");
+    			System.out.print("Is the applicant a mature student <y/n>: ");
+				mstudent = input.next();
+				mstudent = mstudent.toLowerCase();
+    		}//End while Loop
+
     }
 
 
