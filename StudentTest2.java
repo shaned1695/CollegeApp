@@ -94,6 +94,34 @@ public class StudentTest2 {
     		}//end if
 		}//end forloop of inputting data
 
+		//Reset Choice
+    	choice =0;
+
+    	//While loop,f keeps going until the user chooses to quit.
+		while (choice !=3){
+    		//Prompt the user for his choice
+			System.out.println("\n\nEnter choice \n1: View Course/Personal Details \n2: Edit Course/Personal Details \n3: Exit\n ");
+    		//Validate the next Input
+			strchoice = input.next();
+			choice = validate(strchoice,1);
+
+			//User has chosen to View Course Info, Prompt him for ID
+			if(choice == 1){
+				System.out.print("Please enter that student's ID: ");
+				struserID = input.next();
+				userID = validate(struserID,2);
+    			for(int i = 0;i<s1.length;i++){
+    				//If user prompt matches ID
+    				if(userID == s1[i].getid()){
+    					//Change flag
+	    				flag = true;
+	    				System.out.println("ID Found");
+	    				//Hold onto the position the array is on.
+	    				sub = i;
+	    				break;
+    				}//end if
+    			}//end for
+
     }
 
 
