@@ -85,6 +85,14 @@ public class StudentTest2 {
 	    				}
 	    			}//end else if dob.length != 10
     			}//end while
+    			//Create Mature Student
+    			s1[i] = new MatureStudent(Name,ID,Address,a1[i],Date_Of_Birth);
+    		}//end if
+    		else{
+    			//Create Student
+    			s1[i] = new Student(Name,ID,Address,a1[i]);
+    		}//end if
+		}//end forloop of inputting data
 
     }
 
