@@ -1,10 +1,19 @@
-public class MatureStudent {
+/**
+ * @(#)MatureStudent.java
+ *
+ *
+ * @author
+ * @version 1.00 2016/4/15
+ */
+
+
+public class MatureStudent extends Student {
 	//attributes
 	private String DoB;
 
-	//constructor
+	//constuctor
     public MatureStudent(String name, int id, String address, Application a1, String DoB) {
-    	//super(name, id, address, a1);
+    	super(name, id, address, a1);
     	this.DoB = DoB;
     }//end constructor
 
