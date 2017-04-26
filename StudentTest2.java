@@ -248,4 +248,26 @@ public class StudentTest2 {
 
     }//end main method
 
+
+//*********************************VALIDATION METHOD*********************************
+
+	public static int validate(String x,int y){
+    	if(y==1){
+    		while(!x.matches("[1-3]")){
+    			System.out.println("Error,Digits Between 1 to 3 Only");
+    			System.out.print("Enter choice \n1: View Course/Personal Details \n2: Edit Course/Personal Details \n3: Exit\n");
+    			x = input.nextLine();
+    		}//end while for validate loginmenu
+    		return Integer.parseInt(x);
+		}//end if y==1
+
+    	else if(y==3){
+    		while(!x.matches("[1-5]")){
+    			System.out.println("\nError, Numbers 1-5 Only\n");
+    			System.out.print("\n\nSelect An Option\n\n1: View Application Details\n2: View Personal Details\n3: Change Application Details\n4: Change Personal Details\n5: Exit\n");
+    			x = input.nextLine();
+    		}//end while
+    		return Integer.parseInt(x);
+    	}//end if y==3
+
 }//end class
