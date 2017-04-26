@@ -121,6 +121,23 @@ public class StudentTest2 {
 	    				break;
     				}//end if
     			}//end for
+    			//If flag = False, then ID not found
+    			if (flag == false){
+    				System.out.println("ID was not found, this program will now end");
+    				System.exit(0);
+    			}//end if
+    			//If mature flag = true, then ID does match, and you can print the details.
+    			else{
+    				System.out.print(s1[sub].toString());
+    				}//end else
+			}//end if choice 1
+
+			//If user chose to Edit Personal/
+			else if(choice==2){
+				//promt the user to enter ID
+				System.out.print("Please enter the applicants ID: ");
+				struserID = input.nextLine();
+				userID = validate(struserID,4);
 
     }
 
