@@ -72,6 +72,19 @@ public class StudentTest2 {
     				if (Date_Of_Birth.length()!=10){
     				System.out.println("Error, invalid format\n\nPlease enter dd/mm/yyyy");
     				}
+    				else{
+	    				check1 = Date_Of_Birth.charAt(2);
+	    				check2 = Date_Of_Birth.charAt(5);
+	    				if ((check1=='/') && (check2 =='/')){
+	    					System.out.println("Date of Birth has been entered Correctly");
+	    					MatureFlag = true;
+	    				}
+	    				//If the 2'nd and 5'th characters are not "/", but it is 10 characters, make the user re-input the data.
+	    				else{
+	    					System.out.println("Error, invalid format\n\nPlease enter dd/mm/yyyy");
+	    				}
+	    			}//end else if dob.length != 10
+    			}//end while
 
     }
 
