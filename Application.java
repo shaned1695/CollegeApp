@@ -8,7 +8,7 @@ public class Application {
     	this.course_number = ((course_number >0)?course_number: 1);
     }//end constructor
 
-	//set and get methods 
+	//set and get methods
     public void  setcourse_name(String course_name){
     	this.course_name = course_name;
     }

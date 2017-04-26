@@ -291,5 +291,3 @@ public class StudentTest2 {
 
     }//end validate method
 }//end class
-
-}//end class

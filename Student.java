@@ -1,13 +1,4 @@
-/**
- * @(#)Student.java
- *
- *
- * @author
- * @version 1.00 2016/4/7
- */
-
-
-public class Student extends Applicant{
+public class Student extends Applicant {
 	//attributes
 	private String address;
 	private Application a1;
@@ -25,9 +16,9 @@ public class Student extends Applicant{
     	return address;
     }
 
-    public String toString(){
+
+	public String toString(){
     	return super.toString() + "\nAddress: " + address + a1.toString();
     }//end toString
-
 
 }//end class
