@@ -270,4 +270,26 @@ public class StudentTest2 {
     		return Integer.parseInt(x);
     	}//end if y==3
 
+    	else if(y==4){
+    		while(!x.matches("\\d+")){
+    			System.out.println("Error,Digits Only");
+    			System.out.print("Please re-enter the number: ");
+				x = input.nextLine();
+    		}//end while
+    		return Integer.parseInt(x);
+    	}//end if==4
+
+    	else if(y==5){
+    			while(!x.matches("[1-2]")){
+    			System.out.println("Error,Digits Between 1 to 2 Only");
+    			System.out.print("Enter 1 to Change Course Or 2 to Change Course ID : ");
+    			x = input.nextLine();
+    		}//end while for validate loginmenu
+    		return Integer.parseInt(x);
+    	}
+    	return Integer.parseInt(x);
+
+    }//end validate method
+}//end class
+
 }//end class
