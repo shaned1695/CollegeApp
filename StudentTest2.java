@@ -61,6 +61,18 @@ public class StudentTest2 {
 				mstudent = mstudent.toLowerCase();
     		}//End while Loop
 
+    		//reset MatureFlag
+    		MatureFlag = false;
+
+    		//If the matrueFlag is Yes, Then Make the user enter Date_Of_Birth
+    		if(mstudent.matches("y")){
+    			while(MatureFlag == false){
+    				System.out.print("Enter date of birth dd/mm/yyyy : ");
+    				Date_Of_Birth = input.next();
+    				if (Date_Of_Birth.length()!=10){
+    				System.out.println("Error, invalid format\n\nPlease enter dd/mm/yyyy");
+    				}
+
     }
 
 
