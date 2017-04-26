@@ -18,6 +18,18 @@ public class StudentTest2 {
     	boolean MatureFlag = false;
     	boolean flag = false;
 
+    	//prompt the user to enter the number of students
+    	System.out.print("Please enter the number of students: ");
+    	strnumrecords = input.next();
+    	//validate the entered data.
+    	numrecords = validate(strnumrecords,4);
+    	//Create new student and application.
+    	Student s1[] = new Student[numrecords];
+    	Application a1[] = new Application[numrecords];
+
+		//take in details for each student
+    	for(int i = 0;i<numrecords;i++){
+
     }
 
 
