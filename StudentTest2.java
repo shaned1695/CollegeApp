@@ -189,6 +189,23 @@ public class StudentTest2 {
 							}//end if
 						}//end choice = 3
 
+						else if(mchoice == 4){
+							System.out.print("Enter 1 to Change Student Name Or 2 to Change Student ID : ");
+							strchangest = input.nextLine();
+							changest = validate(strchangest,5);
+							if(changest == 1){
+								System.out.print("Enter Course Name :");
+								NewStudentName = input.nextLine();
+								s1[sub].setname(NewStudentName);
+							}//end if
+							if(changest == 2){
+								System.out.print("Enter Student ID : ");
+								strnewstudentID = input.nextLine();
+								NewStudentID = validate(strnewstudentID,2);
+								s1[sub].setid(NewStudentID);
+							}//end if
+						}//end choice = 4
+
 
     }
 
