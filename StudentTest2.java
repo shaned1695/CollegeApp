@@ -30,6 +30,22 @@ public class StudentTest2 {
 		//take in details for each student
     	for(int i = 0;i<numrecords;i++){
 
+    		//Prompt the user for the information
+			input.nextLine();
+			System.out.println("\nEnter Student " + (i + 1) + "\n");
+    		System.out.print("Please enter student name: ");
+    		Name = input.nextLine();
+    		System.out.print("Please enter id: ");
+    		strID = input.nextLine();
+    		ID = validate(strID,4);
+    		System.out.print("Please enter course name: ");
+    		Course_Name = input.nextLine();
+    		System.out.print("Please enter course id: ");
+    		strCourse_Number = input.nextLine();
+    		Course_Number = validate(strCourse_Number,4);
+    		System.out.print("Please enter address: ");
+    		Address = input.nextLine();
+
     }
 
 
